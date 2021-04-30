@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const bookSchema = new Schema ({
-  author: String,
-  genre: String,
+  name: String,
+  description: String,
+  status: String,
 });
 
 const Book = mongoose.model('Book', bookSchema);
